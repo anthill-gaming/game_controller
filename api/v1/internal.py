@@ -11,3 +11,13 @@ Example:
         ...
 """
 from anthill.platform.api.internal import as_internal, InternalAPI
+
+
+@as_internal()
+async def spawn(api: InternalAPI, **options):
+    pass
+
+
+@as_internal()
+async def terminate(api: InternalAPI, **options):
+    pass
